@@ -10,10 +10,7 @@ This project aims to develop and backtest algorithmic trading strategies using P
 
 ```
 algorithmic-trading/
-├── fetch_stock_data.py
-├── strategies/
-│ └── moving_average.py
-├── backtest.py
+├── main.py
 ├── .gitignore
 ├── README.md
 └── requirements.txt
@@ -21,43 +18,45 @@ algorithmic-trading/
 
 More files and directories will be added as the project develops.
 
+More files and directories will be added as the project develops.
+
 ## Getting Started
 
 1. Clone the repository:
-```
+```bash
 git clone https://github.com/yourusername/algorithmic-trading.git
 cd algorithmic-trading
 ```
 
 2. Create and activate a virtual environment:
-```
+```bash
 python -m venv .venv
 source .venv/bin/activate # On Windows use `.venv\Scripts\activate`
 ```
 
 3. Install the required packages:
-```
+```bash
 pip install -r requirements.txt
 ```
 
-4. Run the stock data fetching script:
-```
-python fetch_stock_data.py
-```
+**Note:** The `backtesting` library is installed directly from its GitHub repository.
 
-This will fetch recent stock data for Apple Inc. (AAPL) and display the first few rows.
-
-5. Backtest a trading strategy:
+4. Run the backtest script:
 ```bash
-python backtest.py
+python main.py
 ```
 
-This will apply the moving average strategy on the stock data and generate several plots:
-- Close price and moving averages.
-- Buy signals on the close price.
-- Daily returns.
-- Cumulative returns.
-- A zoomed-in view of buy signals for a specific date range.
+This will apply a moving average crossover strategy using Google stock data and generate several plots.
+
+## Requirements
+
+- Python 3.x
+- Virtual environment (`venv`)
+- Packages listed in `requirements.txt`
+
+## Backtest Example
+
+The current strategy implemented in `main.py` is a simple moving average crossover strategy. It uses two simple moving averages (10-day and 20-day) and generates buy and sell signals based on the crossover of these two moving averages.
 
 ## License
 
