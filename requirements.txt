@@ -1,4 +1,4 @@
 git+https://github.com/kernc/backtesting.py.git
-pandaspip
+pandas
 matplotlib
 yfinance

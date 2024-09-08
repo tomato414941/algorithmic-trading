@@ -18,8 +18,6 @@ algorithmic-trading/
 
 More files and directories will be added as the project develops.
 
-More files and directories will be added as the project develops.
-
 ## Getting Started
 
 1. Clone the repository:
